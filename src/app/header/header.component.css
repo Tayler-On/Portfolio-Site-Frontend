@@ -1,0 +1,57 @@
+.nav {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(201, 240, 201); */
+}
+.name-link {
+  padding-bottom: 5px;
+  font-size: 2rem;
+  font-family: "Fredericka the Great", cursive;
+  color: rgba(31, 66, 154, 0.824);
+}
+
+.job-title {
+  padding-top: 2px;
+  font-family: "IM Fell Double Pica", serif;
+  color: cornflowerblue;
+}
+
+.header-links {
+  padding-bottom: 10px;
+  font-family: "IM Fell Double Pica", serif;
+}
+
+.link {
+  padding: 10px;
+  color: rgba(31, 66, 154, 0.824);
+}
+
+.hover:hover {
+  color: aliceblue;
+}
+
+@media (min-width: 769px) {
+  .nav {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid rgba(31, 66, 154, 0.824); */
+    background: rgba(100, 149, 237, 0.55);
+    box-shadow: 0px 0px 60px 10px rgba(31, 66, 154, 0.824);
+  }
+  .name-link {
+    font-size: 3.5rem;
+    margin-left: 10px;
+  }
+  .job-title {
+    display: none;
+  }
+  .header-links {
+    font-size: 2rem;
+  }
+}

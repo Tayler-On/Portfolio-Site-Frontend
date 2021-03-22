@@ -1,0 +1,20 @@
+<section class="desktop-project-container">
+  <section class="project-container">
+    <h1 class="heading">Grand Circus Projects</h1>
+    <div class="project-cards-container">
+      <app-project
+        *ngFor="let project of grandCircusProjects"
+        [projectRef]="project"
+        class="project-card"
+      ></app-project>
+    </div>
+    <h1 class="heading">Personal Projects</h1>
+    <div class="project-cards-container">
+      <app-project
+        *ngFor="let project of personalProjects"
+        [projectRef]="project"
+        class="project-card"
+      ></app-project>
+    </div>
+  </section>
+</section>

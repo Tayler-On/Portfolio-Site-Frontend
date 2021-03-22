@@ -1,0 +1,27 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.pdf-link-container {
+  text-align: center;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: aliceblue;
+}
+.pdf-link-container:hover {
+  color: aliceblue;
+}
+
+.skills-list {
+  margin: 0px 5px;
+  display: flex;
+  justify-content: space-around;
+}

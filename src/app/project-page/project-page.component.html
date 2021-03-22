@@ -1,0 +1,34 @@
+<section class="main">
+  <h1>{{ projectpageRef?.title }}</h1>
+  <div>
+    <span> --></span>
+    <a href="{{ projectpageRef?.githublink }}" class="project-link"
+      >View the code on GitHub</a
+    >
+    <span> | </span>
+    <a href="{{ projectpageRef?.hostedlink }}" class="project-link"
+      >View the site for yourself!</a
+    >
+    <span> <--</span>
+  </div>
+
+  <p class="summary">
+    {{ projectpageRef?.summary }}
+  </p>
+  <!-- <iframe
+    width="774"
+    height="380"
+    src="{{ projectpageRef?.video }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe> -->
+
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="250"
+    [width]="500"
+  >
+  </youtube-player>
+</section>

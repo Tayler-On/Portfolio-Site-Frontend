@@ -1,0 +1,40 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-cards-container {
+  margin-top: 5px;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(240, 248, 255, 0.7);
+  height: 110px;
+  width: 150px;
+  text-align: center;
+} */
+
+@media (min-width: 769px) {
+  .desktop-project-container {
+    margin: 5% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    border: 1px solid aliceblue;
+    padding: 0;
+    border-radius: 20px;
+  }
+  .project-card {
+    margin: 15px;
+  }
+}
