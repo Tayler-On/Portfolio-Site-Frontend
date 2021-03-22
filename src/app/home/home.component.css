@@ -47,6 +47,10 @@
   font-size: 1.2rem;
 }
 
+.construction {
+  color: red;
+}
+
 @media (min-width: 769px) {
   .about-container {
     display: flex;
