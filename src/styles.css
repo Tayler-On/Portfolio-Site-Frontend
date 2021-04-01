@@ -2,16 +2,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "IM Fell Double Pica", serif;
-  color: rgba(31, 66, 154, 0.824);
+  /* font-family: "Chango", cursive; */
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: rgba(91, 92, 96, 0.824);
 }
 
 html {
-  background: url("/assets/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: black;
 }
 
 .hidden {
@@ -19,9 +16,14 @@ html {
 }
 
 .heading {
-  font-size: 2rem;
+  /* text-shadow: 2px 2px #464444f5; */
+  color: aliceblue;
+  font-family: "Sacramento", cursive;
+  font-size: 2.2rem;
   font-weight: bolder;
   margin: 10px 0px 0px 0px;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .link:hover {
@@ -29,12 +31,16 @@ html {
 }
 
 .sub-heading {
-  font-size: 1.4rem;
-  color: cornflowerblue;
+  font-size: 2rem;
+  color: #ff66c4;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .sub-sub-heading {
   color: aliceblue;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .main {
@@ -45,10 +51,6 @@ html {
   margin: 20px;
 }
 
-.project-link {
-  text-decoration: underline;
-}
-
 .summary {
   margin: 2% 0%;
   border-radius: 20px;
@@ -56,34 +58,29 @@ html {
   padding: 5px;
   background-color: rgb(240, 248, 255, 0.7);
 }
-.video {
-  margin: 20px;
-  border-radius: 5px;
-  width: 400px;
-  box-shadow: 0px 0px 10px 10px rgba(31, 66, 154, 0.524);
-}
 
 @media (min-width: 769px) {
   .desktop-container {
-    margin: 5% 30%;
+    /* margin: 5% 30%; */
     display: flex;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
     border: 1px solid aliceblue;
     padding: 0;
     border-radius: 20px;
   }
 
   .desktop-project-container {
-    margin: 5% 15%;
+    /* margin: 5% 15%; */
     display: flex;
     justify-content: center;
-    align-items: space-between;
-    border: 1px solid aliceblue;
+    align-items: center;
+    /* border: 1px solid aliceblue; */
     padding: 0;
     border-radius: 20px;
   }
-  .video {
-    width: 500px;
+
+  .heading {
+    font-size: 4rem;
   }
 }

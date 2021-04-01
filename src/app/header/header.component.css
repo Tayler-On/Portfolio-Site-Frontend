@@ -4,19 +4,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgb(201, 240, 201); */
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0px 0px 60px 10px rgba(47, 49, 52, 0.824);
 }
 .name-link {
   padding-bottom: 5px;
   font-size: 2rem;
   font-family: "Fredericka the Great", cursive;
-  color: rgba(31, 66, 154, 0.824);
+  color: rgb(91, 92, 96);
+  z-index: 1;
 }
 
 .job-title {
   padding-top: 2px;
-  font-family: "IM Fell Double Pica", serif;
-  color: cornflowerblue;
+  font-family: "Sacramento", cursive;
+  font-size: 1.5rem;
+  color: aliceblue;
 }
 
 .header-links {
@@ -26,7 +29,7 @@
 
 .link {
   padding: 10px;
-  color: rgba(31, 66, 154, 0.824);
+  color: rgba(91, 92, 96, 0.824);
 }
 
 .hover:hover {
@@ -41,8 +44,7 @@
     justify-content: space-between;
     align-items: center;
     /* border-bottom: 1px solid rgba(31, 66, 154, 0.824); */
-    background: rgba(100, 149, 237, 0.55);
-    box-shadow: 0px 0px 60px 10px rgba(31, 66, 154, 0.824);
+    /* box-shadow: 0px 0px 60px 10px rgba(106, 109, 116, 0.824); */
   }
   .name-link {
     font-size: 3.5rem;

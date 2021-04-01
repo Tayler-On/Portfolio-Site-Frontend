@@ -1,34 +1,106 @@
-<section class="main">
+<!-- <section class="main">
   <h1>{{ projectpageRef?.title }}</h1>
   <div>
-    <span> --></span>
-    <a href="{{ projectpageRef?.githublink }}" class="project-link"
-      >View the code on GitHub</a
+    <span> -- </span>
+    <a href="{{ projectpageRef?.githublink }}" class="project-link">
+      View GitHub</a
     >
     <span> | </span>
     <a href="{{ projectpageRef?.hostedlink }}" class="project-link"
       >View the site for yourself!</a
     >
-    <span> <--</span>
+    <span> --</span>
   </div>
 
   <p class="summary">
     {{ projectpageRef?.summary }}
   </p>
-  <!-- <iframe
-    width="774"
-    height="380"
-    src="{{ projectpageRef?.video }}"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe> -->
 
   <youtube-player
     videoId="{{ projectpageRef?.video }}"
     suggestedQuality="highres"
-    [height]="250"
-    [width]="500"
+    [height]="200"
+    [width]="350"
   >
   </youtube-player>
-</section>
+</section> -->
+<!--
+<div class="project-container">
+  <img src="assets/JW-title.png" class="title" />
+  <div>
+    <a href="{{ projectpageRef?.githublink }}" class="links">GitHub</a>
+    <span> | </span>
+    <a href="{{ projectpageRef?.hostedlink }}" class="links">View the site</a>
+  </div>
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="160"
+    [width]="280"
+    class="video-mobile"
+  >
+  </youtube-player>
+
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="280"
+    [width]="490"
+    class="video-desktop"
+  >
+  </youtube-player>
+
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="503"
+    [width]="880"
+    class="video-desktop2"
+  >
+  </youtube-player>
+
+  <img src="assets/JW-1-feat-rules.png" class="feat" />
+  <img src="assets/JW-2-feat-responsive.png" class="feat" />
+  <img src="assets/JW-3-feat-features.png" class="feat" />
+  <img src="assets/JW-4-feat-randomization.png" class="feat" />
+</div> -->
+
+<div class="project-container">
+  <img src="{{ projectpageRef?.logo }}" class="title" />
+  <div class="link-container">
+    <a href="{{ projectpageRef?.githublink }}" class="links">GitHub</a>
+    <span> | </span>
+    <a href="{{ projectpageRef?.hostedlink }}" class="links">View the site</a>
+  </div>
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="160"
+    [width]="280"
+    class="video-mobile"
+  >
+  </youtube-player>
+
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="280"
+    [width]="490"
+    class="video-desktop"
+  >
+  </youtube-player>
+
+  <youtube-player
+    videoId="{{ projectpageRef?.video }}"
+    suggestedQuality="highres"
+    [height]="503"
+    [width]="880"
+    class="video-desktop2"
+  >
+  </youtube-player>
+
+  <img src="{{ projectpageRef?.feat1 }}" class="feat" />
+  <img src="{{ projectpageRef?.feat2 }}" class="feat" />
+  <img src="{{ projectpageRef?.feat3 }}" class="feat" />
+  <img src="{{ projectpageRef?.feat4 }}" class="feat" />
+</div>

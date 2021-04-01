@@ -1,73 +1,122 @@
 .about-container {
+  margin-top: -4%;
+  width: 100%;
+  height: 88vh;
+  justify-content: space-evenly;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  background: url("/assets/Background-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.title {
+  margin-left: 7%;
+  width: 90%;
+}
 .headshot {
-  margin-top: 4%;
-  margin-bottom: 15px;
-  height: 175px;
-  width: 175px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 60px 10px rgba(31, 66, 154, 0.824);
+  display: none;
+  margin-top: -9%;
+  width: 50%;
+  border-radius: 30%;
+  background: #5ce1e6c2;
 }
 
 .about-text {
+  margin-top: -15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.greeting-text {
-  padding: 0px 10px;
-  height: 110px;
-  width: 350px;
-  text-align: center;
 }
 
 .contact-info {
-  margin-top: 2px;
+  padding-bottom: 2%;
+  /* margin-top: 1%; */
+  margin-bottom: 4%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 250px;
-  padding: 3px;
-  border-radius: 20px;
-  font-weight: bolder;
-  font-weight: 900;
-  background: rgba(100, 149, 237, 0.55);
+  justify-content: space-around;
+  height: 100%;
+  width: 85%;
+  border-radius: 30% 0% 30% 0%;
+  background: #ff66c4c1;
+}
+
+.greeting-text {
+  font-size: 1.4rem;
+  padding: 3% 0% 0% 16%;
+  height: 95%;
+  width: 80%;
+  text-align: right;
+  color: aliceblue;
 }
 
 .connect-text {
-  font-size: 1.2rem;
+  margin-top: 2%;
+  margin-bottom: -2%;
+  font-size: 1.8rem;
+  font-family: "Sacramento", cursive;
 }
 
-.construction {
-  color: red;
+.connect-text,
+.connect-number,
+.connect-email,
+.linkedin {
+  color: aliceblue;
+  padding-left: 2%;
 }
 
+.github {
+  color: aliceblue;
+}
+
+.divider {
+  color: orange;
+}
 @media (min-width: 769px) {
   .about-container {
+    margin: 4% 0% 0% 0%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 85vh;
   }
+
+  .title {
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
   .headshot {
-    margin: 12% 0%;
-    height: 350px;
-    width: 350px;
-    box-shadow: 0px 0px 50px 10px rgba(31, 66, 154, 0.424);
+    margin-top: -24%;
+    height: 200px;
+    width: 210px;
+    display: none;
   }
-  .greeting-header {
-    font-size: 4rem;
+
+  .contact-info {
+    width: 40%;
+    border: none;
+    background: none;
   }
 
   .about-text {
-    margin-left: 5%;
+    margin-top: 0%;
+    margin-right: 5%;
+    width: 70%;
+    text-align: center;
+  }
+
+  .greeting-text {
+    margin-top: -18%;
+    text-align: center;
+  }
+
+  .connect {
+    margin-left: 6%;
   }
 }

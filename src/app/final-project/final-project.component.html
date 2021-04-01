@@ -1,3 +1,5 @@
-<p class="heading desktop-project-container">
-  COMING SOON (Check back after March 26th!)
-</p>
+<app-project-page
+  *ngFor="let project of projects"
+  [projectpageRef]="project"
+  class="desktop-project-container"
+></app-project-page>
